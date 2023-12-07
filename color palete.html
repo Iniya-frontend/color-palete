@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colors</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+</head>
+<link rel="stylesheet" href="./task1.css">
+<body>
+
+    <script>
+        
+            
+            function drp(){
+          var tot=document.getElementById("color").value;
+          var red=document.getElementById("cl1").value;
+          var blue=document.getElementById("cl2").value;
+          var green=document.getElementById("cl3").value;
+          var yellow=document.getElementById("cl4").value;
+          var pink=document.getElementById("cl5").value;
+          if (tot=="red") {
+        var box= document.getElementById("bb");
+        box.style.backgroundColor="red";
+         console.log("red");
+        }
+        else{
+            console.log("not red");
+        }
+         if(tot=="blue"){
+          document.getElementById("bb").style.backgroundColor="blue";
+        console.log("blue");
+         }
+         else{
+            console.log("not blue");
+         }
+        if(tot=="green"){
+            document.getElementById("bb").style.backgroundColor="green";
+        console.log("green");
+        }
+        else{
+console.log("not green");
+        }
+        if (tot=="yellow") {
+            document.getElementById("bb").style.backgroundColor="yellow";
+        console.log("yellow");
+        }
+        else{
+            console.log("not yellow");
+        }
+        if (tot=="pink") {
+            document.getElementById("bb").style.backgroundColor="hotpink";
+            console.log("pink");
+        }
+        else{0
+            console.log("not pink");
+        }
+          
+          
+          
+         
+       
+    }
+    </script>
+  <select  id="color" onchange="drp()">
+    <option>select the colors</option>
+        <option id="cl1" >red</option>
+        <option id="cl2">blue</option>
+        <option id="cl3">green</option>
+        <option id="cl4">yellow</option>
+        <option id="cl5">pink</option>
+    </select>
+   <div id="bb" style="width: 500px; height:300px;"></div>
+
+ 
+    
+</body>
+</html>
